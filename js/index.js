@@ -47,7 +47,7 @@ for (let div of divs) {
 let element = document.createElement('div');
 element.innerHTML = 'Here is a new div';
 
-function mostInner(element) {
+function mostInner() {
   let pyramidDivs = document.getElementsByTagName('div')[1];
   let nextDiv = pyramidDivs.children[0];
   
