@@ -48,5 +48,12 @@ let element = document.createElement('div');
 element.innerHTML = 'Here is a new div';
 
 function mostInner(element) {
+  let pyramidDivs = document.getElementsByTagName('div')[1];
+  let nextDiv = pyramidDivs.children()[0];
   
+  while(nextDiv) {
+    pyramidDivs = nextDiv;
+    nextDiv = pyramidDivs.children()[0];
+  }
+  return pyramidDivs;
 }
