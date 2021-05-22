@@ -37,12 +37,12 @@ function changeColor2() {
 }
 
 for (let div of divs) {
-  div.addEventListener('mouseover', changeColor);
+  div.addEventListener('mouseover', changeColor).addEventListener('mouseout', changeColor2);
 }
 
-for (let div of divs) {
-  div.addEventListener('mouseout', changeColor2);
-}
+// for (let div of divs) {
+//   div.addEventListener('mouseout', changeColor2);
+// }
 
 let element = document.createElement('div');
 element.innerHTML = 'Here is a new div';
