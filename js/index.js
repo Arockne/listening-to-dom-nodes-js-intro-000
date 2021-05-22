@@ -46,3 +46,7 @@ for (let div of divs) {
 
 let element = document.createElement('div');
 element.innerHTML = 'Here is a new div';
+
+function mostInner(element) {
+  
+}
