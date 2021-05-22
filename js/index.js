@@ -38,7 +38,7 @@ function changeColor2() {
 
 for (let div of divs) {
   div.addEventListener('mouseover', changeColor);
-  div.addEventListener('mouseout'), changeColor2);
+  div.addEventListener('mouseout', changeColor2);
 }
 
 // for (let div of divs) {
